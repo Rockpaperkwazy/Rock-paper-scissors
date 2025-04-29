@@ -1,4 +1,4 @@
-//function to get the computer's choice
+//function to get computer's choice
 function getComputerChoice(){
 
     const randomNumber = Math.random();
@@ -15,11 +15,7 @@ function getComputerChoice(){
     }
 }
 
-// console.log (getComputerChoice());
-
-
-
-// function to get human's choice
+//function to get human's choice
 function getHumanChoice(){
 
     let userChoice  = prompt('Rock, Paper or Scissors?', '');
@@ -35,12 +31,8 @@ function getHumanChoice(){
        return 'Invalid input, please try again.'
     };
 }
-// console.log (getHumanChoice());
 
-//new variables to store functions
-
-// const humanSelection = getHumanChoice();
-// const computerSelection = getComputerChoice();
+//variables to store the scores of both players
 let humanScore = 0;
 let computerScore = 0;
 
@@ -80,8 +72,6 @@ function playRound(humanChoice, computerChoice){
         return `You donut, that's not even in the options. Play again!`;
     };   
 }
-
-// console.log(playRound(humanSelection, computerSelection));
 
 function playGame(){
 
